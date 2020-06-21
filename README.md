@@ -23,7 +23,7 @@ Things you may want to cover:
 
 * ...
 
-#DB設計
+# DB設計
 
 ## usersテーブル
 
@@ -35,3 +35,10 @@ Things you may want to cover:
 ### Association
 - has_many :messages
 - has_many :groups, through: :groups_users
+
+## messagesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|message|text|null: false|
+|date|datetime|null: false|
