@@ -89,3 +89,10 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :member
 
+## members_massegesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|members_id|integer|null: false, foregin_key: true|
+|messages_id|integer|null: false, foregin_key: true|
+
