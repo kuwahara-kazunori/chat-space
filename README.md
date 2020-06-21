@@ -42,3 +42,7 @@ Things you may want to cover:
 |------|----|-------|
 |message|text|null: false|
 |date|datetime|null: false|
+
+### Association
+- belongs_to :user
+- has_many :member, througt: :members_messages
