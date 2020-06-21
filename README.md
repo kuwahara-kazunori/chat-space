@@ -56,3 +56,9 @@ Things you may want to cover:
 ### Association
 - has_many :user, through: :groups_users
 - has_many :member, througt: :groups_members
+
+## memberテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
