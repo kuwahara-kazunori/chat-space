@@ -73,3 +73,7 @@ Things you may want to cover:
 |------|----|-------|
 |groups_id|integer|null: false, foregin_key: true|
 |users_id|integer|null: false, foregin_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :user
