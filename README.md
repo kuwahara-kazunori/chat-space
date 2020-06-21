@@ -73,15 +73,3 @@ Things you may want to cover:
 ### Association
 - belongs_to :group
 - belongs_to :user
-
-## members_massegesテーブル
-
-|Column|Type|Options|
-|------|----|-------|
-|members_id|integer|null: false, foregin_key: true|
-|messages_id|integer|null: false, foregin_key: true|
-
-### Association
-- belongs_to :member
-- belongs_to :messege
-
