@@ -73,3 +73,11 @@ Things you may want to cover:
 ### Association
 - belongs_to :group
 - belongs_to :user
+
+## groups_messagesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|group|references|null: false, foregin_key: true|
+|message|references|null: false, foreign_key: true|
+
