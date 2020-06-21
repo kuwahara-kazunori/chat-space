@@ -63,18 +63,6 @@ Things you may want to cover:
 - has_many :groups_messages
 - has_many :groups, througt: :groups_messages
 
-## membersテーブル
-
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null: false|
-
-### Association
-- has_many :groups_members
-- has_many :members, through: :groups_members
-- has_many :members_messages
-- has_many :messages, througt: :members_messages
-
 ## groups_usersテーブル
 
 |Column|Type|Options|
