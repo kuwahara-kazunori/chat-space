@@ -56,7 +56,9 @@ Things you may want to cover:
 |name|string|index: true, null: false, unique: true|
 
 ### Association
+- has_many :groups_users
 - has_many :user, through: :groups_users
+- has_many :groups_members
 - has_many :member, througt: :groups_members
 
 ## membersテーブル
