@@ -46,6 +46,7 @@ Things you may want to cover:
 
 ### Association
 - belongs_to :user
+- has_many :member_messages
 - has_many :member, througt: :members_messages
 
 ## groupsテーブル
