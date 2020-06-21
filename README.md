@@ -31,8 +31,6 @@ Things you may want to cover:
 |------|----|-------|
 |name|string|index: true, null: false, unique: true|
 |email|string|null: false|
-|group|references|null: false, foregin_key: true|
-|message|references|null: false, foregin_key: true|
 
 ### Association
 - has_many :messages
