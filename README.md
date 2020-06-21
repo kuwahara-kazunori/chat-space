@@ -68,7 +68,9 @@ Things you may want to cover:
 |name|string|null: false|
 
 ### Association
+- has_many :groups_members
 - has_many :members, through: :groups_members
+- has_many :members_messages
 - has_many :messages, througt: :members_messages
 
 ## groups_usersテーブル
