@@ -57,7 +57,7 @@ Things you may want to cover:
 - has_many :user, through: :groups_users
 - has_many :member, througt: :groups_members
 
-## memberテーブル
+## membersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
