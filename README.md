@@ -23,9 +23,15 @@ Things you may want to cover:
 
 * ...
 
+#DB設計
+
 ## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |name|string|index: true, null: false, unique: true|
 |email|string|null: false|
+
+### Association
+- has_many :messages
+- has_many :groups, through: :groups_users
