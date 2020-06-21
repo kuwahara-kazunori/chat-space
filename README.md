@@ -52,3 +52,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|index: true, null: false, unique: true|
+
+### Association
+- has_many :user, through: :groups_users
+- has_many :member, througt: :groups_members
