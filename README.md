@@ -77,3 +77,10 @@ Things you may want to cover:
 ### Association
 - belongs_to :group
 - belongs_to :user
+
+## groups_membersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|groups_id|integer|null: false, foregin_key: true|
+|members_id|integer|null: false, foregin_key: true|
