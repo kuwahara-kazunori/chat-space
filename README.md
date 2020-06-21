@@ -41,8 +41,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|message|text|null: false|
-|date|datetime|null: false|
+|body|text|null: false|
+|image|string||
 
 ### Association
 - belongs_to :user
