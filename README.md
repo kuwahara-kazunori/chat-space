@@ -84,3 +84,8 @@ Things you may want to cover:
 |------|----|-------|
 |groups_id|integer|null: false, foregin_key: true|
 |members_id|integer|null: false, foregin_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :member
+
