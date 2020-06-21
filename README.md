@@ -46,3 +46,9 @@ Things you may want to cover:
 ### Association
 - belongs_to :user
 - has_many :member, througt: :members_messages
+
+## groupsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|index: true, null: false, unique: true|
