@@ -67,8 +67,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|groups_id|integer|null: false, foregin_key: true|
-|users_id|integer|null: false, foregin_key: true|
+|group|references|null: false, foregin_key: true|
+|user|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
