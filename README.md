@@ -66,3 +66,10 @@ Things you may want to cover:
 ### Association
 - has_many :members, through: :groups_members
 - has_many :messages, througt: :members_messages
+
+## groups_usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|groups_id|integer|null: false, foregin_key: true|
+|users_id|integer|null: false, foregin_key: true|
