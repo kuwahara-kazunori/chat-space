@@ -62,3 +62,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
+
+### Association
+- has_many :members, through: :groups_members
+- has_many :messages, througt: :members_messages
