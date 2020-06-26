@@ -11,6 +11,7 @@
   &__user-name {
     height: 100px;
     background-color: #253141;
+    padding: 0 20px;
     display: flex;
     align-items: center;
   }
@@ -18,7 +19,6 @@
       height: 20px;
       width: 260px;
       background-color: #253141;
-      margin: 0 20px;
       display: flex;
       justify-content: space-between;
       &__name {
@@ -42,7 +42,20 @@
   &__group-list {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
+    padding: 0 20px;
   }
+    .Group {
+      padding: 20px 0 40px;
+      &__name {
+        color: #ffffff;
+        font-size: 15px;
+      }
+      &__message {
+        color: #ffffff;
+        font-size: 11px;
+        margin-top: 5px;
+      }
+    }
 }
 
 .Chat-main {
