@@ -1,0 +1,53 @@
+.Chat
+  .RightHeader
+    .RightHeader__group
+      .RightHeader__group__name
+        test
+      %ul.RightHeader__group__memberList
+        Member：
+        %li.RightHeader__group__memberList__name
+          name1
+        %li.RightHeader__group__memberList__name
+          name2
+        %li.RightHeader__group__memberList__name
+          name3
+    = link_to "#", class: "RightHeader__editButton" do
+      Edit
+
+  .MessageField
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__userName
+          name
+        .MessageInfo__date
+          2020/06/27/(Sun)15:00:00
+      .Message
+        %p.Message__content
+          Hello!
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__userName
+          name
+        .MessageInfo__date
+          2020/06/27/(Sun)15:05:00
+      .Message
+        %p.Message__content
+          こんにちは
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__userName
+          name
+        .MessageInfo__date
+          2020/06/27/(Sun)15:10:00
+      .Message
+        %p.Message__content
+          你好
+          
+  .Footer
+    %form(class="Form" action="")
+      .Form__contents
+        %input(class="Form__contents__input" placeholder="type a messsage" type="text" name="message[content]" id="message-content")/
+        %label(class="Form__contents__inputImage" for="message-image")
+          %i.far.fa-image.Form__icon
+            %input(class="Hidden" type="file" name="message[image]" id="message-image")/
+      %input(type="submit" name="commit" value="Send" class="Form__submit")/
