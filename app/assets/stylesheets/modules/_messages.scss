@@ -60,10 +60,39 @@
 
 .Chat {
   width: calc(100vw - 300px);
-  .Right-header {
+  .RightHeader {
     height: 100px;
+    padding: 0 40px;
     background-color: #ffffff;
     border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    &__group {
+      &__name {
+        padding-top: 35px;
+        font-size: 20px;
+        color: #333333;
+      }
+      &__memberList {
+        margin-top: 15px;
+        font-size: 12px;
+        display: flex;
+        color: #999999;
+        &__name {
+          padding-right: 5px;
+        }
+      }
+    }
+    &__editButton {
+      display: block;
+      border: 1px solid #38aef0;
+      color: #38aef0;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 28px;
+      padding: 0 20px;
+      text-decoration: none;
+    }
   }
   .MessageField {
     height: calc(100vh - 100px - 90px);

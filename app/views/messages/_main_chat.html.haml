@@ -1,5 +1,17 @@
 .Chat
-  .Right-header
-    
+  .RightHeader
+    .RightHeader__group
+      .RightHeader__group__name
+        test
+      %ul.RightHeader__group__memberList
+        Member：
+        %li.RightHeader__group__memberList__name
+          name1
+        %li.RightHeader__group__memberList__name
+          name2
+        %li.RightHeader__group__memberList__name
+          name3
+    = link_to "#", class: "RightHeader__editButton" do
+      Edit
   .MessageField
   .Footer
