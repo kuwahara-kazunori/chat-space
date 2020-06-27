@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+//side-bar全てのfont-color
+$font-color: #ffffff;
+
 .wrapper {
   display: flex;
 }
@@ -22,7 +25,7 @@
       display: flex;
       justify-content: space-between;
       &__name {
-        color: #ffffff;
+        color: $font-color;
         font-weight: bold;
         font-size: 16px;
       }
@@ -32,7 +35,7 @@
         justify-content: flex-end;
         list-style: none;
         &__btn {
-          color: #ffffff;
+          color: $font-color;
         }
         .fas {
           margin-left: 5px;
@@ -44,18 +47,18 @@
     background-color: #2f3e51;
     padding: 0 20px;
   }
-    .Group {
-      padding: 20px 0 40px;
-      &__name {
-        color: #ffffff;
-        font-size: 15px;
-      }
-      &__message {
-        color: #ffffff;
-        font-size: 11px;
-        margin-top: 5px;
-      }
+  .Group {
+    padding: 20px 0 40px;
+    &__name {
+      color: $font-color;
+      font-size: 15px;
     }
+    &__message {
+      color: $font-color;
+      font-size: 11px;
+      margin-top: 5px;
+    }
+  }
 }
 
 .Chat {
