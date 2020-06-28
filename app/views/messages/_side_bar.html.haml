@@ -12,18 +12,10 @@
           %i.fas.fa-cog
           
   .Side-bar__group-list
-    .Group
-      .Group__name
-        techcamp
-      .Group__message
-        まだメッセージはありません
-    .Group
-      .Group__name
-        techcamp
-      .Group__message
-        まだメッセージはありません
-    .Group
-      .Group__name
-        techcamp
-      .Group__message
-        まだメッセージはありません
+    - current_user.groups.each do |group|
+      .Group
+        = link_to '#' do
+          .Group__name
+            = group.name
+          .Group__message
+            まだメッセージはありません
