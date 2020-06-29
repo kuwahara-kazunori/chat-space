@@ -44,10 +44,11 @@
           你好
           
   .Footer
-    %form(class="Form" action="")
+    = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
       .Form__contents
-        %input(class="Form__contents__input" placeholder="type a messsage" type="text" name="message[content]" id="message-content")/
-        %label(class="Form__contents__inputImage" for="message-image")
-          %i.far.fa-image.Form__icon
-            %input(class="Hidden" type="file" name="message[image]" id="message-image")/
-      %input(type="submit" name="commit" value="Send" class="Form__submit")/
+        = f.text_field :content, class: 'Form__contents__input', placeholder: 'type a message'
+        = f.label :image, class: 'Form__contents__inputImage' do
+          = icon('far', 'image', class: 'Form__icon')
+          = f.file_field :image, class: 'Hidden'
+      = f.submit 'Send', class: 'Form__submit'
+
