@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 //side-bar全てのfont-color
@@ -98,6 +99,7 @@ $font-color: #ffffff;
     }
   }
   .MessageField {
+    overflow: scroll;
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding: 35px 40px 0;
@@ -121,6 +123,9 @@ $font-color: #ffffff;
         &__content {
           color: #434a54;
           font-size: 14px;
+        }
+        &__image {
+          height: 300px;
         }
       }
     }
@@ -146,7 +151,7 @@ $font-color: #ffffff;
           height: 50px;
           position: absolute;
           right: 10px;
-          .far {
+          .Form__icon {
             line-height: 50px;
             font-size: 25px;
           }
