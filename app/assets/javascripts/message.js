@@ -1,3 +1,6 @@
 $(function(){
-  console.log("JavaScriptは正常に読み込まれています");
+  $('.Form').on('submit', function(e){
+    e.preventDefault();
+    console.log('hoge')
+  });
 });
