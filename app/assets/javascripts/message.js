@@ -55,6 +55,7 @@ $(function(){
     .done(function(data){
       let html = buildHTML(data);
       $('.MessageFild').append(html);
+      $('.MessageField').animate({ scrollTop: $('.MessageField')[0].scrollHeight});
       $('Form')[0].reset();
     })
   });
