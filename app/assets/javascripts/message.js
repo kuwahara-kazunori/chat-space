@@ -54,6 +54,8 @@ $(function(){
     })
     .done(function(data){
       let html = buildHTML(data);
+      $('.MessageFild').append(html);
+      $('Form')[0].reset();
     })
   });
 });
